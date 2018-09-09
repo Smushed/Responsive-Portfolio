@@ -1,0 +1,436 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Nav Bar*/
+nav {
+	text-align: right;
+}
+.primary-nav {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	float: right;
+	padding-top: 63.5px;
+}
+.primary-nav li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+.primary-nav li:last-child {
+	margin-right: 0;
+}
+/* Primary Header */
+.logo {
+	padding: 25px;
+	font-size: 48px;
+	line-height: 44px;
+	color: #fff;
+	background: #4aaaa5;
+	float: left;
+}
+.primary-header {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;	
+}
+/* Footer */
+.push {
+	height: 105px;
+}
+.portfolio-push {
+	height: 105px;
+}
+.primary-footer {
+	background: #666;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	text-align: center;
+	border-top: 5px solid #4aaaa5;
+	margin-top: 50px;
+	bottom: 0;
+	left: 0;
+	display: block;
+}
+.footer-text {
+	color: #a8a8a8;
+	padding-top: 27.5px;
+}
+/* Bio */
+.bio{
+	display: inline-block;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-size: 18px;
+	line-height: 25px;
+	color: #3b3b3b;
+}
+.bio-image {
+	float: left;
+	margin-top: 25px;
+	margin-right: 10px;
+}
+/* Ugly portfolio page */
+.ugly-enclosing-box {
+	height: 600px;
+	position: relative;
+	padding-top: 25px;
+}
+.ugly-portfolio-box {
+	width: 225px;
+	height: 225px;
+	border: 2px solid #a8a8a8;
+	float: left;
+	margin: 20px;
+}
+.portfolio-header {
+	background-color: #4aaaa5;
+	position: relative;
+	color: #fff;
+	font-weight: 200;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	text-align: center;
+	height: 25px;
+	padding-top: 12.5px;
+	margin-top: 175px;
+}
+.uglyproject1 {
+	background-image: url("../../assets/images/Burning.jpg");
+	background-size: 225px 225px;
+}
+.uglyproject2 {
+	background-image: url("../../assets/images/Landscape.jpg");
+	background-size: 225px 225px;
+}
+.uglyproject3 {
+	background-image: url("../../assets/images/List.jpg");
+	background-size: 225px 225px;
+}
+.uglyproject4 {
+	background-image: url("../../assets/images/OrangeMoon.jpg");
+	background-size: 225px 225px;
+}
+.uglyproject5 {
+	background-image: url("../../assets/images/Peacock.jpg");
+	background-size: 225px 225px;
+}
+/* Contact */
+.contact-form {
+	margin-top: 25px;
+	color: #3b3b3b;
+	font-size: 22px;
+	padding-left: 100px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.input-box {
+	width: 80%;
+	height: 30px;
+	font-size: 18px;
+	font-weight: 200;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-top: 2px solid #888;
+	border-left: 2px solid #888;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.message-box {
+	width: 80%;
+	font-size: 18px;
+	font-weight: 100;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-top: 2px solid #888;
+	border-left: 2px solid #888;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	max-width: 100%;
+	height: 200px;
+}
+.submit-button {
+	background: #4aaaa5;
+	border: 1px #888 solid;
+	width: 160px;
+	height: 45px;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 200;
+}
+.submit-button:hover {
+	background: #31726e;
+}
+/* Links in header & footer */
+.primary-header a {
+	color: #888;
+}
+.primary-header a:hover {
+	color: #4aaaa5;
+}
+.tagline {
+	margin: 0 ;
+	display: block;
+}
+a {
+	text-decoration: none;
+}
+/* Whole Website Style */
+body {
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url("../../assets/images/white_wall.png");
+}
+body,
+html {
+	min-height: 100%;
+	height: 100%;
+}
+.body-header {
+	font-size: 44px;
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+}
+/* Grid */
+.container {
+	margin: auto;
+	width: 960px;
+}
+.central-container {
+	margin: 50px;
+	padding: 50px 0;
+}
+.whole-website-container {
+	min-height: 100%;
+	position: relative;
+	display: block;
+}
+.ugly-central-container {
+	width: 760px;
+	margin: 50px;
+	padding: 50px 0;
+}
+.body-container {
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background: #fff;
+}
+/* Clearfix */
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+	overflow: auto;
+}
+/* Media Screen Sizing */
+@media screen and (max-width: 980px) {
+	/* To best fit the screenshot I would use a width of ~785px. I think this looks better */
+	.body-container {
+		width: 930px;
+		margin-right: 25px;
+		margin-left: 25px;
+	}
+	/* Make the container fit the new size of the page */
+	.container {
+		width: 960px;
+	}
+	.central-container {
+		margin: 50px;
+		padding: 50px 0;
+	}
+	.primary-nav {
+		padding-right: 25px;
+	}
+	/* To make the two columns instead of the two rows I would adjust the body-container to the size I want.*/
+	.ugly-central-container {
+		width: 850px;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.portfolio-push {
+		height: 105px;
+	}
+}
+@media screen and (max-width: 768px) {
+	/* Updates the width for the smaller screen*/
+	.body-container {
+		width: 748px;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	/* Updates the container size */
+	.container {
+		width: 768px;
+	}
+	/* Changes the margin and the padding so it fits to the total width */
+	/* Also changes the padding to make it closer to the header for the smaller screen */
+	.central-container {
+		margin: 50px 0;
+		padding: 25px;
+	}
+	/* This is the portfolio container */
+	.ugly-central-container {
+		margin: 50px 0;
+		padding: 25px 0 25px 25px;
+		width: 700px;
+	}
+	/* Updates the margin on the portfolio page */
+	.ugly-portfolio-box {
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+	/* Makes the Nav bar a block level element */
+	.primary-nav {
+		margin-right: 5px;
+	}
+	/* Updates the push at the bottom to make the footer closer to the body */
+	.push {
+		height: 25px;
+	}
+	.portfolio-push{
+		height: 150px;
+	}
+	/*Updates the message me section to grow the box for the smaller screen size */
+	.input-box {
+		width: 85%
+	}
+	.message-box {
+		width: 85%
+	}
+	.contact-form {
+		padding-left: 75px;
+	}
+}
+@media screen and (max-width: 640px) {
+	/* Changes the width to fit the smaller screen */
+	.body-container {
+		width: 640px;
+		margin: 0;
+	}
+	/* Updates the container size for the smaller screen*/
+	.container {
+		width: 640px;
+	}
+	/* Changes the margin and the padding so it fits to the total width */
+	/* Also changes the padding to make it closer to the header for the smaller screen */
+	.central-container {
+		margin: 50px 0;
+		padding: 25px 5px;
+	}
+	/* Changes the Header to be one long block */
+	.primary-header {
+		position: static;
+		display: inline-block;
+		float: none;
+	}
+	/* This is the portfolio container */
+	.ugly-central-container {
+		margin: 50px 0;
+		padding: 50px 5px;
+		width: 100%;
+	}
+	/* Makes the Nav bar a block level element */
+	.primary-nav {
+		float: none;
+		clear: both;
+		padding-top: 10px;
+		text-align: center;
+	}
+	/* Updates the push at the bottom to make the footer closer to the body */
+	.push{
+		height: 25px;
+	}
+	/* Makes the logo stretch the whole screen */
+	.logo {
+		width: 100%;
+		text-align: center;
+		padding: 12.5px 0;
+	}
+	.primary-footer {
+		position: absolute;
+	}
+	/* This is to make sure the footer stays at the bottom. If the other pages add additional content they will all be static */
+	.portfolio-small-footer {
+		position: static;
+	}
+	.portfolio-push {
+		height: 50px;
+	}
+	/*This is to grow the boxes to better fit the screen */
+	.ugly-portfolio-box {
+		width: 350px;
+		height: 350px;
+		margin: 20px 140px;
+	}
+	.uglyproject1 {
+		background-size: 350px 350px;
+	}
+	.uglyproject2 {
+		background-size: 350px 350px;
+	}
+	.uglyproject3 {
+		background-size: 350px 350px;
+	}
+	.uglyproject4 {
+		background-size: 350px 350px;
+	}
+	.uglyproject5 {
+		background-size: 350px 350px;
+	}
+	.portfolio-header {
+		font-size: 20px;
+		padding-bottom: 5px;
+		margin-top: 275px;
+	}
+}
