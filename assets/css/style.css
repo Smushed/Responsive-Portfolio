@@ -385,6 +385,7 @@ html {
 		float: none;
 		clear: both;
 		padding-top: 10px;
+		padding-bottom: 10px;
 		text-align: center;
 	}
 	/* Updates the push at the bottom to make the footer closer to the body */
